@@ -1,0 +1,17 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    "transform-flow-strip-types",
+    ["import", { "libraryName": "antd" }],
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "components": "./src/components",
+          "actions": "./src/redux/actions"
+        }
+      }
+    ]
+  ]
+}
